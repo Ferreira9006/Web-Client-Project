@@ -1,0 +1,122 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f6f9;
+}
+
+/* Animations */
+.fade-in {
+  animation: fadeIn 3s;
+  -webkit-animation: fadeIn 3s;
+  -moz-animation: fadeIn 3s;
+  -o-animation: fadeIn 3s;
+  -ms-animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-moz-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-ms-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* Navbar */
+.navbar {
+  padding: 1rem 0;
+  background-color: #32445d !important;
+  box-shadow: none !important;
+}
+.navbar-brand {
+  font-size: 1.8rem;
+  color: #2A4365 !important;
+}
+
+.navbar a {
+  color: #fff !important;
+}
+
+/* Hero Section */
+.hero-section {
+  background-image: url('../images/hero-bg.webp');
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-section h1, .hero-section p {
+  color: #ffffff;
+}
+
+/* Services Section */
+#services h2 {
+  color: #2A4365;
+}
+.card h5 {
+  color: #2A4365;
+}
+.card p {
+  color: #4A5568;
+}
+
+/* About Us Section */
+#about h2 {
+  color: #2A4365;
+}
+#about p {
+  color: #4A5568;
+}
+
+/* Footer */
+footer {
+  background-color: #2A4365;
+}
+footer p {
+  color: #E2E8F0;
+}
+
+
+/* TESTE */
+
+.hero-section {
+  background-color: #f8f9fa; /* Light background */
+}
+
+.live-text {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #343a40; /* Bootstrap's dark color */
+}
+
+.cursor {
+  border-left: 2px solid #343a40; /* Match text color */
+  animation: blink 0.8s steps(1) infinite;
+}
+
+@keyframes blink {
+  50% {
+      border-color: transparent;
+  }
+}
+
+
+/* TESTE */
