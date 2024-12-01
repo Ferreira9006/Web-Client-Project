@@ -1,4 +1,4 @@
-const words = ["Manage Bookings", "Track Pet Care", "Communicate with Owners"]; // List of words
+    const words = ["Manage Bookings", "Track Pet Care", "Communicate with Owners"]; // List of words
 let currentWordIndex = 0;
 let currentCharIndex = 0;
 let isDeleting = false;

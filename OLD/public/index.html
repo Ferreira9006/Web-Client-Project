@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WoofWorks - Gestão de Creches para Cães</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-primary" href="#">WoofWorks</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Funcionalidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Sobre Nós</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+                    <button class="btn btn-primary ms-2 px-4 rounded-pill">Agendar uma demonstração</button>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section text-white d-flex align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 offset-lg-5 text-lg-end text-center">
+                    <h2 class="display-5 fw-bold fade-in">Simplifying Pet Care for You</h2>
+                    <h1><span id="dynamic-text"></span></h1>
+                    <a href="#services" class="btn btn-primary btn-lg fade-in">Explore</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section id="services" class="mt-5 py-5">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-4">Uma experiência única</h2>
+            <div class="row mt-5">
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm p-4 h-100 d-flex flex-column">
+                        <img src="assets/images/pet_appointment.webp" class="mx-auto d-block mb-3 rounded-circle img-fluid service-image" alt="Appointments Icon">
+                        <h5 class="fw-bold">Faça marcações</h5>
+                        <p>
+                            Easily book and track appointments with pet owners. Use automated reminders to stay organized, 
+                            optimize your schedule, and ensure you never miss a client while delivering exceptional service.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm p-4 h-100 d-flex flex-column">
+                        <img src="assets/images/pet_profile.webp" class="mx-auto d-block mb-3 rounded-circle img-fluid service-image" alt="Profiles Icon">
+                        <h5 class="fw-bold">Controle os perfis de animais</h5>
+                        <p>
+                            Keep detailed records for each dog, including health information, behavior notes, and owner preferences. 
+                            This allows you to deliver personalized care that meets the unique needs of every furry guest.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm p-4 h-100 d-flex flex-column">
+                        <img src="assets/images/pet_report.webp" class="mx-auto d-block mb-3 rounded-circle img-fluid service-image" alt="Reports Icon">
+                        <h5 class="fw-bold">Analises diárias</h5>
+                        <p>
+                            Share daily updates with pet owners about their dogs’ activities and care. Simplify communication
+                             and administrative tasks while building trust through transparent and professional reporting.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Us Section -->
+    <section id="about" class="py-5">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-4">Transform your doggy daycare operations with WoofWorks.</h2>
+            <p class="lead">At WoofWorks, we offer seamless management solutions to ensure every pet is cared for with professionalism. Trust us with the details, so you can enjoy quality time with your pets.</p>
+        </div>
+    </section>
+
+    <section id="book-demo" class="bg-primary text-white py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left Column -->
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <h2 class="fw-bold mb-3">Ready to get started?</h2>
+                    <p class="lead">
+                        Discover how WoofWorks can revolutionize your doggy daycare! 
+                        <br>
+                        Book a demo today to explore how our solutions can simplify operations, enhance efficiency, and keep tails wagging.
+                    </p>
+                </div>
+                <!-- Right Column -->
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-4">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" class="form-control rounded-pill" id="email" placeholder="Enter your email" aria-label="Email Address" required>
+                        </div>
+                        <button type="submit" class="btn btn-light px-5 py-2 rounded-pill">Book a Demo</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Footer -->
+     <div class="container">    
+  <footer class="py-5">
+    <div class="row">
+      <div class="col-6 col-md-2 mb-3">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-2 mb-3">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-2 mb-3">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-5 offset-md-1 mb-3">
+        <form>
+          <h5>Subscribe to our newsletter</h5>
+          <p>Monthly digest of what's new and exciting from us.</p>
+          <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+            <label for="newsletter1" class="visually-hidden">Email address</label>
+            <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+            <button class="btn btn-primary" type="button">Subscribe</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+      <p>© 2024 Company, Inc. All rights reserved.</p>
+      <ul class="list-unstyled d-flex">
+        <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+        <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+        <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+      </ul>
+    </div>
+  </footer>
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/dynamic-text.js"></script>
+</body>
+</html>

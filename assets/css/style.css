@@ -1,158 +1,325 @@
-/* General Styles */
-:root {
-  --primary-color: #009eb4;
-  --secondary-color: #32445d;
-  --dark-color: #343a40;
-  --light-color: #f8f9fa;
-  --success-color: #28a745;
-  --info-color: #17a2b8;
-  --warning-color: #ffc107;
-  --danger-color: #dc3545;
-  --white-color: #ffffff;
-  --black-color: #000000;
-  --gray-light-color: #E2E8F0;
-  --blue-dark-color: #2A4365;
-  --text-gray: #4A5568;
+/* 1. Reset e Configurações Globais */
+/* 1.1. Reset Padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* 1.2. Estilos Gerais do Corpo */
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: var(--light-color);
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
 }
 
-/* Animations */
-.fade-in {
-  animation: fadeIn 3s;
-  -webkit-animation: fadeIn 3s;
-  -moz-animation: fadeIn 3s;
-  -o-animation: fadeIn 3s;
-  -ms-animation: fadeIn 3s;
+/* 2. Barra de Navegação */
+/* 2.1. Estrutura Principal */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  background-color: #32445d;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  z-index: 1000;
 }
 
-@keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+/* 2.2. Título da Navbar */
+.navbar h1 {
+  color: #fff;
+  font-size: 24px;
 }
 
-@-moz-keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+/* 2.3. Menu de Navegação */
+/* 2.3.1. Estilos Gerais do Menu */
+.nav-menu {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
 }
 
-@-webkit-keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+.nav-menu li {
+  margin: 0 15px;
 }
 
-@-o-keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+/* 2.3.2. Links do Menu */
+.nav-menu li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
 }
 
-@-ms-keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+/* 2.4. Botão da Navegação */
+.nav-menu .nav-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-menu .nav-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* 2.5. Botão "Hambúrguer" */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 24px;
+  width: 30px;
+}
+
+.hamburger span {
+  display: block;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 3px;
+}
+
+/* 3. Secção de Hero */
+/* 3.1. Estrutura Principal */
+.hero-dog {
+  position: relative; /* Necessário para o pseudo-elemento ::after funcionar corretamente */
+  width: 100%;
+  height: 100vh;
+  background: url('../images/dogs-playing.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.hero-dog::after {
+  content: ""; /* Necessário para exibir o pseudo-elemento */
+  position: absolute; /* Para cobrir completamente a secção */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Overlay transparente */
+  z-index: 1; /* Fica atrás do conteúdo da secção */
+}
+
+.hero-dog > * {
+  position: relative; /* Para garantir que o conteúdo fique acima do overlay */
+  z-index: 2;
+}
+
+/* 3.2. Texto da Secção Hero */
+.hero-dog .hero-text {
+  width: 40%;
+  color: #fff;
+  margin-top: -50px;
+  text-align: center;
+}
+
+/* 3.2.1. Títulos */
+.hero-dog .hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+/* 3.2.2. Parágrafos */
+.hero-dog .hero-text p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+/* 5. Animação de Cursor */
+/* 5.1. Efeito de Blink */
+.cursor {
+  border-left: 2px solid #fff;
+  animation: blink 0.8s steps(1) infinite;
 }
 
 @keyframes blink {
   50% {
-      border-color: transparent;
+    opacity: 0;
   }
 }
 
-/* Navbar */
-.navbar {
-  padding: 1rem 0;
-  background-color: var(--secondary-color) !important;
-  box-shadow: none !important;
-  font-size: 18px;
-  font-weight: 500;
+.container {
+  max-width: 1200px;
+  margin: 25px auto;
+  padding: 0 20px;
 }
 
-.navbar-brand {
-  font-size: 1.8rem;
-  color: var(--blue-dark-color) !important;
-}
-
-.navbar a {
-  color: var(--white-color) !important;
-}
-
-/* Hero Section */
-.hero-section {
-  background-image: url('../images/hero-bg.webp'); 
-  background-size: cover;
-  background-position: center;
-  background-color: var(--light-color);
-  height: 80vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.hero-section h1, .hero-section p {
-  color: var(--white-color);
-}
-
-.live-text {
-  font-size: 3rem;
+.container .container-title {
+  color: #2A4365; 
+  max-width: 650px; 
+  margin: 0 auto;
+  font-size: 2.5rem;
   font-weight: bold;
-  color: var(--dark-color);
+  text-align: center;
 }
 
-.cursor {
-  border-left: 2px solid var(--dark-color);
-  animation: blink 0.8s steps(1) infinite;
-}
-
-/* Services Section */
-#services h2 {
-  font-size: 48px;
-  font-weight: bold;
-  background-image: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+.custom-style-blue {
+  background-image: linear-gradient(to right, #009eb4, #32445d);
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
-#services p {
-  line-height: 1.5;
-  min-height: 60px;
-  margin-bottom: 0;
-  text-align: justify;
+.container .row {
+  margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; /* Espaçamento mais uniforme */
+  gap: 20px; /* espaçamento entre colunas */
 }
 
-.service-image {
-  height: 150px;
-  width: 150px;
+.container .row .col {
+  flex: 1 1 calc(33% - 20px); /* Ajusta a largura da coluna dinamicamente */
+  max-width: calc(33% - 20px); /* Evita quebra de linha */
+  display: flex;
+  justify-content: center; /* Centraliza o conteúdo da coluna */
 }
 
-.card { height: 100%; }
-
-.card h5 { 
-  color: var(--blue-dark-color); 
-  margin-bottom: 15px;
+.container .row .col .card {
+  width: 100%;
+  max-width: 350px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
-.card p {
-  color: var(--text-gray);
-  min-height: 80px;
-  text-align: justify;
-  line-height: 1.6;
+.container .row .col .card .card-image {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 15px;
 }
 
-/* About Us Section (DUPLICATED CODE - FIX LATER)*/
-#about h2 { 
-  color: var(--blue-dark-color); 
-  max-width: 650px; 
-  margin:0 auto;
-  font-size: 48px;
-  font-weight: bold;
-  background-image: linear-gradient(to right, var(--primary-color), var(--secondary-color));
-  -webkit-text-fill-color: transparent;
-  background-clip: text;}
+.rounded-image {
+  border-radius: 50%;
+  object-fit: cover; /* Garantir que a imagem preenche o círculo */
+}
 
-#about p { color: var(--text-gray); }
+.container .row .col .card .card-title {
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
 
-/* Footer */
-footer { background-color: var(--blue-dark-color); }
+.container .row .col .card .card-text {
+  margin-bottom: 1rem;
+  color: #6c757d;
+}
 
-footer p { color: var(--gray-light-color); }
+
+/* 6. Responsividade */
+/* 6.1. Estilos para Mobile */
+@media (max-width: 768px) {
+  /* 6.1.1. Botão "Hambúrguer" */
+  .hamburger {
+    display: flex; /* Mostrar botão em ecra pequeno */
+  }
+
+  /* 6.1.2. Menu de Navegação */
+  .nav-menu {
+    display: none; /* Esconder menu em ecra pequeno */
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    background-color: #32445d;
+    width: 100%;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .nav-menu.active {
+    display: flex; /* Mostrar menu quando esta ativo */
+  }
+
+  .nav-menu li {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .nav-menu .nav-button {
+    margin: 10px auto;
+  }
+
+  /* 6.1.3. Secção de Hero */
+  .hero-dog {
+    background-color: #0056b3 !important;
+    background: none; /* NOTA: Alterar para uma imagem no mobile */
+  }
+
+  .hero-dog .hero-text {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+
+  .hero-dog .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-dog .hero-text p {
+    font-size: 1.2rem;
+  }
+
+  .container .row {
+    justify-content: center;
+  }
+
+  .container .row .col {
+    flex: 1 1 100%; /* Cada coluna ocupa 100% do espaço */
+    max-width: 100%;
+  }
+
+  .container .row .col .card {
+    padding: 15px; /* Reduz o espaçamento interno */
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .container .row .col .card .card-title {
+    font-size: 1rem;
+  }
+
+  .container .row .col .card .card-text {
+    font-size: 0.9rem;
+  }
+
+  .container {
+    padding: 0 10px;
+  }
+
+  .container .container-title {
+    font-size: 2rem;
+    max-width: 100%;
+  }
+
+  .container .row .col .card {
+    padding: 10px;
+  }
+
+  .container .row .col .card .card-title {
+    font-size: 1.5rem;
+  }
+
+  .container .row .col .card .card-text {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+}
