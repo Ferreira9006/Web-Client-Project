@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/css/style.css">
+
   <title>WoofWorks</title>
 </head>
 
@@ -17,57 +18,116 @@
       <span></span>
     </button>
     <ul class="nav-menu">
-      <li><a href="#">Início</a></li>
-      <li><a href="#services">Funcionalidades</a></li>
-      <li><a href="#about">Sobre Nós</a></li>
-      <li><a href="#">Contacto</a></li>
-      <button class="nav-button">Agendar uma demonstração</button>
+      <li class="me-5"><a href="#">Início</a></li>
+      <li class="me-5"><a href="#services">Funcionalidades</a></li>
+      <li class="me-5"><a href="#about">Sobre Nós</a></li>
+      <li class="me-5"><a href="#">Contacto</a></li>
+      <button class="btn btn-blue-rounded">Agendar uma demonstração</button>
     </ul>
   </nav>
 
   <header class="hero-dog">
-    <div class="hero-text">
+    <div class="hero-text text-center">
       <h1>Bem-vindo ao WoofWorks</h1>
       <p>A sua plataforma de gestão</p>
     </div>
   </header>
-  
+
   <section id="services">
-    <div class="container">
-        <h2 class="container-title custom-style-blue">Uma experiência única</h2>
-        <div class="row">
-            <div class="col">
-                <div class="card">
-                    <img src="assets/images/pet_appointment.webp" class="card-image rounded-image" alt="Appointments Icon">
-                    <h5 class="card-title">Faça marcações</h5>
-                    <p class="card-text">
-                        Agende e acompanhe compromissos com os donos dos animais. Use lembretes automáticos para se organizar e nunca perder um cliente, garantindo um serviço excepcional.
-                    </p>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <img src="assets/images/pet_profile.webp" class="card-image rounded-image" alt="Profiles Icon">
-                    <h5 class="card-title">Controle os perfis de animais</h5>
-                    <p class="card-text">
-                        Mantenha registos detalhados para cada cão, incluindo informações de saúde, notas de comportamento e preferências dos donos. Ofereça um cuidado personalizado que atenda às necessidades de cada hóspede.
-                    </p>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <img src="assets/images/pet_report.webp" class="card-image rounded-image" alt="Reports Icon">
-                    <h5 class="card-title">Relatórios Diários</h5>
-                    <p class="card-text">
-                        Partilhe atualizações diárias com os donos sobre as atividades e cuidados dos seus cães. Simplifique a comunicação e crie confiança com relatórios transparentes e profissionais.
-                    </p>
-                </div>
-            </div>
+    <div class="container mx-auto mt-5 mt-16  text-center">
+      <h2 class="container-title custom-style-blue mb-10 mx-auto">Uma experiência única</h2>
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <img src="assets/images/pet_appointment.webp" class="card-image rounded-image mb-5" alt="Appointments Icon">
+            <h5 class="card-title">Faça marcações</h5>
+            <p class="card-text">
+              Agende e acompanhe compromissos com os donos dos animais. Use lembretes automáticos para se organizar e
+              nunca perder um cliente, garantindo um serviço excepcional.
+            </p>
+          </div>
         </div>
+        <div class="col">
+          <div class="card">
+            <img src="assets/images/pet_profile.webp" class="card-image rounded-image mb-5" alt="Profiles Icon">
+            <h5 class="card-title">Controle os perfis de animais</h5>
+            <p class="card-text">
+              Mantenha registos detalhados para cada cão, incluindo informações de saúde, notas de comportamento e
+              preferências dos donos. Ofereça um cuidado personalizado que atenda às necessidades de cada hóspede.
+            </p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="assets/images/pet_report.webp" class="card-image rounded-image mb-5" alt="Reports Icon">
+            <h5 class="card-title">Relatórios Diários</h5>
+            <p class="card-text">
+              Partilhe atualizações diárias com os donos sobre as atividades e cuidados dos seus cães. Simplifique a
+              comunicação e crie confiança com relatórios transparentes e profissionais.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
-</section>
+  </section>
 
-
+  <section id="planos">
+    <div class="container mx-auto mt-16">
+      <h2 class="container-title custom-style-blue mb-10 mx-auto text-center">Planos de Preços</h2>
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <h5 class="card-title mb-5">Plano Básico <span class="badge badge-primary badge-pill">Iniciante</span></h5>
+            <hr class="gray mb-5">
+            <p class="card-text">
+              - Gestão de agendamentos<br>
+              - Perfis básicos de animais<br>
+              - Relatórios simples<br>
+            </p>
+            <p class="card-text"><strong>€19/mês</strong></p>
+            <button class="mx-auto btn btn-blue-rounded">Escolher Plano</button>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <h5 class="card-title mb-5">Plano Pro <span class="badge badge-danger badge-pill">Recomendado</span></h5>
+            <hr class="gray mb-5">
+            <p class="card-text">
+              - Gestão de agendamentos<br>
+              - Perfis básicos de animais<br>
+              - Relatórios simples<br>
+              - Relatórios avançados<br>
+              - Gestão de equipa<br>
+              - Mensagens interativas<br>
+            </p>
+            <p class="card-text"><strong>€39/mês</strong></p>
+            <button class="mx-auto btn btn-blue-rounded">Escolher Plano</button>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <h5 class="card-title mb-5">Plano Premium <span class="badge badge-success badge-pill">Tudo incluído</span>
+            </h5>
+            <hr class="gray mb-5">
+            <p class="card-text">
+              - Gestão de agendamentos<br>
+              - Perfis básicos de animais<br>
+              - Relatórios simples<br>
+              - Relatórios avançados<br>
+              - Gestão de equipa<br>
+              - Mensagens interativas<br>
+              - Integração API<br>
+              - Suporte prioritário<br>
+              - Personalização total<br>
+            </p>
+            <p class="card-text"><strong>€69/mês</strong></p>
+            <button class="mx-auto btn btn-blue-rounded">Escolher Plano</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
   <script src="assets/js/menu-toggle.js"></script>
 </body>
 

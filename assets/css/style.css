@@ -1,12 +1,11 @@
-/* 1. Reset e Configurações Globais */
-/* 1.1. Reset Padrão */
+/* 1. CSS Geral */
+/* 1.1. Estilos Gerais */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* 1.2. Estilos Gerais do Corpo */
 body {
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
@@ -14,8 +13,218 @@ body {
   line-height: 1.6;
 }
 
-/* 2. Barra de Navegação */
-/* 2.1. Estrutura Principal */
+/* 1.2 All Sides Margin */
+.m-0 { margin: 0 !important; }
+.m-1 { margin: 0.25rem !important; /* 4px */ }
+.m-2 { margin: 0.5rem !important; /* 8px */ }
+.m-3 { margin: 0.75rem !important; /* 12px */ }
+.m-4 { margin: 1rem !important; /* 16px */ }
+.m-5 { margin: 1.25rem !important; /* 20px */ }
+.m-6 { margin: 1.5rem !important; /* 24px */ }
+.m-7 { margin: 1.75rem !important; /* 28px */ }
+.m-8 { margin: 2rem !important; /* 32px */ }
+.m-9 { margin: 2.25rem !important; /* 36px */ }
+.m-10 { margin: 2.5rem !important; /* 40px */ }
+.m-11 { margin: 2.75rem !important; /* 44px */ }
+.m-12 { margin: 3rem !important; /* 48px */ }
+.m-14 { margin: 3.5rem !important; /* 56px */ }
+.m-16 { margin: 4rem !important; /* 64px */ }
+.m-20 { margin: 5rem !important; /* 80px */ }
+.m-auto { margin: auto !important; }
+
+/* 1.3 Horizontal Margins (Left and Right) */
+.mx-0 { margin-left: 0 !important; margin-right: 0 !important; }
+.mx-1 { margin-left: 0.25rem !important; margin-right: 0.25rem !important; /* 4px */ }
+.mx-2 { margin-left: 0.5rem !important; margin-right: 0.5rem !important; /* 8px */ }
+.mx-3 { margin-left: 0.75rem !important; margin-right: 0.75rem !important; /* 12px */ }
+.mx-4 { margin-left: 1rem !important; margin-right: 1rem !important; /* 16px */ }
+.mx-5 { margin-left: 1.25rem !important; margin-right: 1.25rem !important; /* 20px */ }
+.mx-6 { margin-left: 1.5rem !important; margin-right: 1.5rem !important; /* 24px */ }
+.mx-7 { margin-left: 1.75rem !important; margin-right: 1.75rem !important; /* 28px */ }
+.mx-8 { margin-left: 2rem !important; margin-right: 2rem !important; /* 32px */ }
+.mx-9 { margin-left: 2.25rem !important; margin-right: 2.25rem !important; /* 36px */ }
+.mx-10 { margin-left: 2.5rem !important; margin-right: 2.5rem !important; /* 40px */ }
+.mx-11 { margin-left: 2.75rem !important; margin-right: 2.75rem !important; /* 44px */ }
+.mx-12 { margin-left: 3rem !important; margin-right: 3rem !important; /* 48px */ }
+.mx-14 { margin-left: 3.5rem !important; margin-right: 3.5rem !important; /* 56px */ }
+.mx-16 { margin-left: 4rem !important; margin-right: 4rem !important; /* 64px */ }
+.mx-20 { margin-left: 5rem !important; margin-right: 5rem !important; /* 80px */ }
+.mx-auto { margin-left: auto !important; margin-right: auto !important; }
+
+/* 1.4 Vertical Margins (Top and Bottom) */
+.my-0 { margin-top: 0 !important; margin-bottom: 0 !important; }
+.my-1 { margin-top: 0.25rem !important; margin-bottom: 0.25rem !important; /* 4px */ }
+.my-2 { margin-top: 0.5rem !important; margin-bottom: 0.5rem !important; /* 8px */ }
+.my-3 { margin-top: 0.75rem !important; margin-bottom: 0.75rem !important; /* 12px */ }
+.my-4 { margin-top: 1rem !important; margin-bottom: 1rem !important; /* 16px */ }
+.my-5 { margin-top: 1.25rem !important; margin-bottom: 1.25rem !important; /* 20px */ }
+.my-6 { margin-top: 1.5rem !important; margin-bottom: 1.5rem !important; /* 24px */ }
+.my-7 { margin-top: 1.75rem !important; margin-bottom: 1.75rem !important; /* 28px */ }
+.my-8 { margin-top: 2rem !important; margin-bottom: 2rem !important; /* 32px */ }
+.my-9 { margin-top: 2.25rem !important; margin-bottom: 2.25rem !important; /* 36px */ }
+.my-10 { margin-top: 2.5rem !important; margin-bottom: 2.5rem !important; /* 40px */ }
+.my-11 { margin-top: 2.75rem !important; margin-bottom: 2.75rem !important; /* 44px */ }
+.my-12 { margin-top: 3rem !important; margin-bottom: 3rem !important; /* 48px */ }
+.my-14 { margin-top: 3.5rem !important; margin-bottom: 3.5rem !important; /* 56px */ }
+.my-16 { margin-top: 4rem !important; margin-bottom: 4rem !important; /* 64px */ }
+.my-20 { margin-top: 5rem !important; margin-bottom: 5rem !important; /* 80px */ }
+.my-auto { margin-top: auto !important; margin-bottom: auto !important; }
+
+/* 1.5 Top Margin */
+.mt-0 { margin-top: 0 !important; }
+.mt-1 { margin-top: 0.25rem !important; /* 4px */ }
+.mt-2 { margin-top: 0.5rem !important; /* 8px */ }
+.mt-3 { margin-top: 0.75rem !important; /* 12px */ }
+.mt-4 { margin-top: 1rem !important; /* 16px */ }
+.mt-5 { margin-top: 1.25rem !important; /* 20px */ }
+.mt-6 { margin-top: 1.5rem !important; /* 24px */ }
+.mt-7 { margin-top: 1.75rem !important; /* 28px */ }
+.mt-8 { margin-top: 2rem !important; /* 32px */ }
+.mt-9 { margin-top: 2.25rem !important; /* 36px */ }
+.mt-10 { margin-top: 2.5rem !important; /* 40px */ }
+.mt-11 { margin-top: 2.75rem !important; /* 44px */ }
+.mt-12 { margin-top: 3rem !important; /* 48px */ }
+.mt-14 { margin-top: 3.5rem !important; /* 56px */ }
+.mt-16 { margin-top: 4rem !important; /* 64px */ }
+.mt-20 { margin-top: 5rem !important; /* 80px */ }
+.mt-auto { margin-top: auto !important; }
+
+/* 1.6 Bottom Margin */
+.mb-0 { margin-bottom: 0 !important; }
+.mb-1 { margin-bottom: 0.25rem !important; /* 4px */ }
+.mb-2 { margin-bottom: 0.5rem !important; /* 8px */ }
+.mb-3 { margin-bottom: 0.75rem !important; /* 12px */ }
+.mb-4 { margin-bottom: 1rem !important; /* 16px */ }
+.mb-5 { margin-bottom: 1.25rem !important; /* 20px */ }
+.mb-6 { margin-bottom: 1.5rem !important; /* 24px */ }
+.mb-7 { margin-bottom: 1.75rem !important; /* 28px */ }
+.mb-8 { margin-bottom: 2rem !important; /* 32px */ }
+.mb-9 { margin-bottom: 2.25rem !important; /* 36px */ }
+.mb-10 { margin-bottom: 2.5rem !important; /* 40px */ }
+.mb-11 { margin-bottom: 2.75rem !important; /* 44px */ }
+.mb-12 { margin-bottom: 3rem !important; /* 48px */ }
+.mb-14 { margin-bottom: 3.5rem !important; /* 56px */ }
+.mb-16 { margin-bottom: 4rem !important; /* 64px */ }
+.mb-20 { margin-bottom: 5rem !important; /* 80px */ }
+.mb-auto { margin-bottom: auto !important; }
+
+/* 1.7 Left Margin */
+.ms-0 { margin-left: 0 !important; }
+.ms-1 { margin-left: 0.25rem !important; /* 4px */ }
+.ms-2 { margin-left: 0.5rem !important; /* 8px */ }
+.ms-3 { margin-left: 0.75rem !important; /* 12px */ }
+.ms-4 { margin-left: 1rem !important; /* 16px */ }
+.ms-5 { margin-left: 1.25rem !important; /* 20px */ }
+.ms-6 { margin-left: 1.5rem !important; /* 24px */ }
+.ms-7 { margin-left: 1.75rem !important; /* 28px */ }
+.ms-8 { margin-left: 2rem !important; /* 32px */ }
+.ms-9 { margin-left: 2.25rem !important; /* 36px */ }
+.ms-10 { margin-left: 2.5rem !important; /* 40px */ }
+.ms-11 { margin-left: 2.75rem !important; /* 44px */ }
+.ms-12 { margin-left: 3rem !important; /* 48px */ }
+.ms-14 { margin-left: 3.5rem !important; /* 56px */ }
+.ms-16 { margin-left: 4rem !important; /* 64px */ }
+.ms-20 { margin-left: 5rem !important; /* 80px */ }
+.ms-auto { margin-left: auto !important; }
+
+/* 1.8 Right Margin */
+.me-0 { margin-right: 0 !important; }
+.me-1 { margin-right: 0.25rem !important; /* 4px */ }
+.me-2 { margin-right: 0.5rem !important; /* 8px */ }
+.me-3 { margin-right: 0.75rem !important; /* 12px */ }
+.me-4 { margin-right: 1rem !important; /* 16px */ }
+.me-5 { margin-right: 1.25rem !important; /* 20px */ }
+.me-6 { margin-right: 1.5rem !important; /* 24px */ }
+.me-7 { margin-right: 1.75rem !important; /* 28px */ }
+.me-8 { margin-right: 2rem !important; /* 32px */ }
+.me-9 { margin-right: 2.25rem !important; /* 36px */ }
+.me-10 { margin-right: 2.5rem !important; /* 40px */ }
+.me-11 { margin-right: 2.75rem !important; /* 44px */ }
+.me-12 { margin-right: 3rem !important; /* 48px */ }
+.me-14 { margin-right: 3.5rem !important; /* 56px */ }
+.me-16 { margin-right: 4rem !important; /* 64px */ }
+.me-20 { margin-right: 5rem !important; /* 80px */ }
+.me-auto { margin-right: auto !important; }
+
+/* 1.9 Text Align */
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.text-left { text-align: left; }
+
+/* 1.10 Imagem redonda */
+.rounded-image {
+  border-radius: 50%;
+  object-fit: cover; /* Garantir que a imagem preenche o círculo */
+}
+
+/* 1.11 Badges */
+.badge {
+  display: inline-block;
+  padding: 0.25em 0.4em;
+  font-size: 60%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.375rem;
+  position: relative;
+  top: -7px;
+  color: #fff;
+}
+
+.badge-pill { border-radius: 10rem; }
+.badge-primary { background-color: #007bff; }
+.badge-secondary { background-color: #6c757d; }
+.badge-success { background-color: #28a745; }
+.badge-danger { background-color: #dc3545; }
+.badge-info { background-color: #17a2b8; }
+.badge-dark { background-color: #343a40; }
+
+.badge-warning {
+  color: #212529;
+  background-color: #ffc107;
+}
+
+.badge-light {
+  color: #212529;
+  background-color: #f8f9fa;
+}
+
+/* 1.12 HR */
+hr.gray {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* 1.13 Botões */
+.btn {
+  padding: 10px 20px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-blue-rounded {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-blue-rounded:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* 2. Navbar */
 .navbar {
   position: fixed;
   top: 0;
@@ -29,50 +238,23 @@ body {
   z-index: 1000;
 }
 
-/* 2.2. Título da Navbar */
 .navbar h1 {
   color: #fff;
   font-size: 24px;
 }
 
-/* 2.3. Menu de Navegação */
-/* 2.3.1. Estilos Gerais do Menu */
 .nav-menu {
   list-style-type: none;
   display: flex;
   align-items: center;
-  margin-left: auto;
 }
 
-.nav-menu li {
-  margin: 0 15px;
-}
-
-/* 2.3.2. Links do Menu */
 .nav-menu li a {
   color: #fff;
   text-decoration: none;
   font-size: 16px;
 }
 
-/* 2.4. Botão da Navegação */
-.nav-menu .nav-button {
-  background-color: #007bff;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 20px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.nav-menu .nav-button:hover {
-  background-color: #0056b3;
-  transform: scale(1.05);
-}
-
-/* 2.5. Botão "Hambúrguer" */
 .hamburger {
   display: none;
   background: none;
@@ -92,7 +274,6 @@ body {
 }
 
 /* 3. Secção de Hero */
-/* 3.1. Estrutura Principal */
 .hero-dog {
   position: relative; /* Necessário para o pseudo-elemento ::after funcionar corretamente */
   width: 100%;
@@ -122,52 +303,33 @@ body {
   z-index: 2;
 }
 
-/* 3.2. Texto da Secção Hero */
 .hero-dog .hero-text {
   width: 40%;
   color: #fff;
   margin-top: -50px;
-  text-align: center;
 }
 
-/* 3.2.1. Títulos */
 .hero-dog .hero-text h1 {
   font-size: 3rem;
   margin-bottom: 10px;
 }
 
-/* 3.2.2. Parágrafos */
 .hero-dog .hero-text p {
   font-size: 1.5rem;
   margin-bottom: 20px;
 }
 
-/* 5. Animação de Cursor */
-/* 5.1. Efeito de Blink */
-.cursor {
-  border-left: 2px solid #fff;
-  animation: blink 0.8s steps(1) infinite;
-}
-
-@keyframes blink {
-  50% {
-    opacity: 0;
-  }
-}
-
+/* 4. Secção de Cards */
 .container {
   max-width: 1200px;
-  margin: 25px auto;
   padding: 0 20px;
 }
 
 .container .container-title {
   color: #2A4365; 
-  max-width: 650px; 
-  margin: 0 auto;
+  max-width: 650px;
   font-size: 2.5rem;
   font-weight: bold;
-  text-align: center;
 }
 
 .custom-style-blue {
@@ -177,7 +339,6 @@ body {
 }
 
 .container .row {
-  margin: 20px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly; /* Espaçamento mais uniforme */
@@ -197,18 +358,11 @@ body {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  text-align: center;
 }
 
 .container .row .col .card .card-image {
   width: 100px;
   height: 100px;
-  margin: 0 auto 15px;
-}
-
-.rounded-image {
-  border-radius: 50%;
-  object-fit: cover; /* Garantir que a imagem preenche o círculo */
 }
 
 .container .row .col .card .card-title {
@@ -223,16 +377,13 @@ body {
   color: #6c757d;
 }
 
-
 /* 6. Responsividade */
 /* 6.1. Estilos para Mobile */
 @media (max-width: 768px) {
-  /* 6.1.1. Botão "Hambúrguer" */
   .hamburger {
     display: flex; /* Mostrar botão em ecra pequeno */
   }
 
-  /* 6.1.2. Menu de Navegação */
   .nav-menu {
     display: none; /* Esconder menu em ecra pequeno */
     flex-direction: column;
@@ -245,20 +396,9 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   }
 
-  .nav-menu.active {
-    display: flex; /* Mostrar menu quando esta ativo */
-  }
+  .nav-menu.active { display: flex; /* Mostrar menu quando esta ativo */ }
+  .nav-menu .nav-button { margin: 10px auto; }
 
-  .nav-menu li {
-    margin: 10px 0;
-    text-align: center;
-  }
-
-  .nav-menu .nav-button {
-    margin: 10px auto;
-  }
-
-  /* 6.1.3. Secção de Hero */
   .hero-dog {
     background-color: #0056b3 !important;
     background: none; /* NOTA: Alterar para uma imagem no mobile */
@@ -266,21 +406,14 @@ body {
 
   .hero-dog .hero-text {
     width: 100%;
-    text-align: center;
     margin: 0;
   }
 
-  .hero-dog .hero-text h1 {
-    font-size: 2rem;
-  }
+  .hero-dog .hero-text h1 { font-size: 2rem; }
+  .hero-dog .hero-text p { font-size: 1.2rem; }
 
-  .hero-dog .hero-text p {
-    font-size: 1.2rem;
-  }
-
-  .container .row {
-    justify-content: center;
-  }
+  .container { padding: 0 10px; }
+  .container .row { justify-content: center; }
 
   .container .row .col {
     flex: 1 1 100%; /* Cada coluna ocupa 100% do espaço */
@@ -293,30 +426,16 @@ body {
     margin: 0 auto;
   }
 
-  .container .row .col .card .card-title {
-    font-size: 1rem;
-  }
-
-  .container .row .col .card .card-text {
-    font-size: 0.9rem;
-  }
-
-  .container {
-    padding: 0 10px;
-  }
+  .container .row .col .card .card-title { font-size: 1rem; }
+  .container .row .col .card .card-text { font-size: 0.9rem; }
 
   .container .container-title {
     font-size: 2rem;
     max-width: 100%;
   }
 
-  .container .row .col .card {
-    padding: 10px;
-  }
-
-  .container .row .col .card .card-title {
-    font-size: 1.5rem;
-  }
+  .container .row .col .card { padding: 10px; }
+  .container .row .col .card .card-title { font-size: 1.5rem; }
 
   .container .row .col .card .card-text {
     font-size: 1rem;
