@@ -375,6 +375,13 @@ hr.gray {
 .container .row .col .card .card-text {
   margin-bottom: 1rem;
   color: #6c757d;
+  min-height: 104px;
+}
+
+.container .row .col .card .price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2A4365;
 }
 
 /* 6. Responsividade */
