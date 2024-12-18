@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/css/style.css">
 
-  <title>WoofWorks</title>
+  <title>WoofWorks - A sua plataforma de gestão de Creches caninas</title>
 </head>
 
 <body>
@@ -20,8 +20,9 @@
     <ul class="nav-menu">
       <li class="me-5"><a href="#">Início</a></li>
       <li class="me-5"><a href="#services">Funcionalidades</a></li>
-      <li class="me-5"><a href="#about">Sobre Nós</a></li>
-      <li class="me-5"><a href="#">Contacto</a></li>
+      <li class="me-5"><a href="#pricing">O que dizem de nós?</a></li>
+      <li class="me-5"><a href="#pricing">Plano de Preços</a></li>
+      <li class="me-5"><a href="#contact">Contactos</a></li>
       <button class="btn btn-blue-rounded">Agendar uma demonstração</button>
     </ul>
   </nav>
@@ -29,7 +30,7 @@
   <header class="hero-dog">
     <div class="hero-text text-center">
       <h1>Bem-vindo ao WoofWorks</h1>
-      <p>A sua plataforma de gestão</p>
+      <p>Simplifique a gestão do seu negócio de forma fácil</p>
     </div>
   </header>
 
@@ -71,11 +72,11 @@
     </div>
   </section>
 
-  <section id="opinioes">
-    
+  <section id="reviews">
+
   </section>
 
-  <section id="planos">
+  <section id="pricing">
     <div class="container mx-auto mt-16">
       <h2 class="container-title custom-style-blue mb-10 mx-auto text-center">Planos de Preços</h2>
       <div class="row">
@@ -125,11 +126,47 @@
     </div>
   </section>
 
-  <section id="contactar">
+  <section id="contact">
 
+    <div class="container mx-auto mt-16 py-10 bg-gray border-round">
+      <h2 class="container-title custom-style-blue mb-10 mx-auto text-center">Contacte-nos</h2>
+      <div class="row">
+        <div class="col">
+          <h1>WoofWorks</h1>
+          <p>
+            Estamos à disposição para esclarecer as suas dúvidas. Preencha o formulário ao lado e entraremos em contacto
+            o mais breve possível.
+          </p>
+          <img src="assets/images/cao-vector.png" alt="Vetor-Cão" class="mt-5">
+        </div>
+        <div class="col">
+          <form action="">
+            <div class="form-group">
+              <label for="name">Nome</label>
+              <input type="text" id="name" name="name" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Telefone</label>
+              <input type="tel" id="phone" name="phone" class="form-control" required>
+              <span id="phone-helper"></span>
+            </div>
+            <div class="form-group">
+              <label for="message">Mensagem</label>
+              <textarea name="message" id="message" class="form-control" required></textarea>
+            </div>
+            <button id="submit-button" class="btn btn-blue-rounded">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </div>
   </section>
   <br><br><br>
   <script src="assets/js/menu-toggle.js"></script>
+  <script src="assets/js/verify-inputs.js"></script>
 </body>
 
 </html>
