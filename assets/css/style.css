@@ -13,6 +13,23 @@ body {
   line-height: 1.6;
 }
 
+.max-width {
+  max-width: 100% !important;
+}
+
+.hidden {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.slider-reviews-buttons{
+  display: inline-block; 
+  margin-top: 10px;
+}
+
 /* 1.2 All Sides Margin */
 .m-0 { margin: 0 !important; }
 .m-1 { margin: 0.25rem !important; /* 4px */ }

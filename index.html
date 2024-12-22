@@ -5,7 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/css/style.css">
-
+  <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+    integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
+    crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <title>WoofWorks - A sua plataforma de gestão de Creches caninas</title>
 </head>
 
@@ -20,7 +23,7 @@
     <ul class="nav-menu">
       <li class="me-5"><a href="#">Início</a></li>
       <li class="me-5"><a href="#services">Funcionalidades</a></li>
-      <li class="me-5"><a href="#pricing">O que dizem de nós?</a></li>
+      <li class="me-5"><a href="#reviews">O que dizem de nós?</a></li>
       <li class="me-5"><a href="#pricing">Plano de Preços</a></li>
       <li class="me-5"><a href="#contact">Contactos</a></li>
       <button class="btn btn-blue-rounded">Agendar uma demonstração</button>
@@ -73,7 +76,22 @@
   </section>
 
   <section id="reviews">
-
+    <div class="container mx-auto mt-5 mt-16  text-center">
+      <h2 class="container-title custom-style-blue mb-10 mx-auto">O que dizem de nós?</h2>
+      <div class="row">
+        <div class="col max-width">
+          <div class="card review max-width show">
+            <img src="" class="card-image review-image rounded-image mb-5" alt="Profile Picture">
+            <h5 class="card-title review-name"></h5>
+            <p class="card-text review-text"></p>
+          </div>
+          <div class="slider-reviews-buttons">
+            <button class="btn btn-blue-rounded" onclick="previousReview()"><i class="fas fa-chevron-left"></i></button>
+            <button class="btn btn-blue-rounded" onclick="nextReview()"><i class="fas fa-chevron-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <section id="pricing">
@@ -167,6 +185,7 @@
   <br><br><br>
   <script src="assets/js/menu-toggle.js"></script>
   <script src="assets/js/verify-inputs.js"></script>
+  <script src="assets/js/slider-reviews.js"></script>
 </body>
 
 </html>
