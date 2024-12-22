@@ -49,11 +49,25 @@ function showReview(data) {
 // Função para gerar um texto aleatório combinando palavras
 function randomText() {
   let words = [
-    `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tincidunt iaculis arcu et pretium. Nulla facilisi.
-    Aenean suscipit quis sapien ullamcorper hendrerit. Vivamus viverra convallis elit, nec mattis tellus egestas sed.`,
-    `Integer interdum vulputate dolor, in faucibus turpis viverra sed. Vestibulum sed posuere arcu. Quisque interdum 
-    sem sed consectetur blandit. Integer ipsum nunc, fermentum eget est sed, posuere pellentesque nibh.`,
-    `Fusce quis aliquet ante, ultrices venenatis nulla. Curabitur in est et lacus hendrerit suscipit. Vivamus ultricies convallis velit vel elementum.`
+    `A WoofWorks transformou completamente a forma como gerimos a nossa creche! 
+    Antes, passávamos horas a organizar reservas e a comunicar com os tutores, mas agora tudo está centralizado e super simples. 
+    Os tutores adoram receber atualizações sobre os seus cães em tempo real, e nós poupamos imenso tempo. Recomendo sem dúvida!`,
+
+    `Desde que implementámos a WoofWorks na nossa creche, notámos um aumento na satisfação dos nossos clientes. 
+    A funcionalidade de check-in/check-out é fantástica, e o calendário integrado facilitou muito a nossa organização. 
+    Além disso, a equipa de suporte da WoofWorks está sempre disponível para ajudar. É um investimento que vale cada cêntimo!`,
+
+    `Adoro o quão intuitiva é a WoofWorks! Não sou muito bom com tecnologia, mas consegui aprender a usar o sistema em pouco tempo. 
+    Os relatórios detalhados ajudam-me a entender as preferências dos nossos clientes e a melhorar o serviço.
+    Obrigado por facilitarem tanto o meu trabalho!`,
+
+    `A funcionalidade de registo digital dos cães foi uma revolução para nós. 
+    Já não perdemos tempo com papelada, e podemos facilmente aceder ao histórico de cada cão, incluindo alergias ou preferências. 
+    E ainda mais, os tutores adoram o sistema de notificações e as fotos do dia. Obrigada, WoofWorks!`,
+
+    `A WoofWorks deu-nos a organização que precisávamos! Com a integração de pagamentos e a gestão de reservas, conseguimos reduzir 
+    os erros e melhorar a experiência tanto para os tutores quanto para os cães. O feedback dos tutores tem sido muito positivo, 
+    especialmente sobre as fotos e os relatórios diários.`
   ];
 
   return words[Math.floor(Math.random() * words.length)];
