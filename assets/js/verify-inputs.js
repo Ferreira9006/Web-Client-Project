@@ -64,6 +64,13 @@ function validateInputs() {
 
   // Ativar/desativar botão de envio
   submitButton.disabled = !(isNameValid && isEmailValid && isPhoneValid && message.length > 0);
+
+  // Verifica se o botão foi clicado
+  submitButton.addEventListener('click', function (event) {
+    if (!submitButton.disabled) {
+      alert('O seu contacto foi enviado!');
+    }
+  });
 }
 
 // Eventos para os inputs
