@@ -238,6 +238,16 @@ hr.gray {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   }
 
+  .nav-menu li {
+    margin: 5px auto !important;
+    text-align: center !important;
+  }
+
+  .nav-menu li:last-child {
+    margin-bottom: 10px !important;
+  }
+
+  .nav-menu li a { font-size: 1.2rem; }
   .nav-menu.active { display: flex; /* Mostrar menu quando esta ativo */ }
   .nav-menu .nav-button { margin: 10px auto; }
 

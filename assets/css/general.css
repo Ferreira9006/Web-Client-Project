@@ -312,6 +312,12 @@ body {
   object-fit: cover; /* Garantir que a imagem preenche o círculo */
 }
 
+.rating-image {
+  width: 100px;
+  height: auto;
+  margin: -42px 0;
+}
+
 /* 1.11 Badges */
 .badge {
   display: inline-block;
