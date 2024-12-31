@@ -1,235 +1,250 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" href="assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/images/favicon/android-chrome-512x512.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+      integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
+      crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>WoofWorks - A sua plataforma de gestão de Creches caninas</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/x-icon" href="assets/images/favicon/favicon.ico">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
-  <link rel="apple-touch-icon" href="assets/images/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicon/android-chrome-192x192.png">
-  <link rel="icon" type="image/png" sizes="512x512" href="assets/images/favicon/android-chrome-512x512.png">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
-    integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
-    crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <title>WoofWorks - A sua plataforma de gestão de Creches caninas</title>
-</head>
+  <body>
+    <!-- Barra de navegação -->
+    <nav class="navbar">
+      <h1>WoofWorks</h1>
+      <button class="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-menu">
+        <li class="me-5"><a href="#">Início</a></li>
+        <li class="me-5"><a href="#services">Funcionalidades</a></li>
+        <li class="me-5"><a href="#reviews">O que dizem de nós?</a></li>
+        <li class="me-5"><a href="#pricing">Plano de Preços</a></li>
+        <a href="#contact"><button class="btn btn-blue-rounded">Agendar uma demonstração</button></a>
+      </ul>
+    </nav>
 
-<body>
-  <nav class="navbar">
-    <h1>WoofWorks</h1>
-    <button class="hamburger" aria-label="Toggle menu">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-    <ul class="nav-menu">
-      <li class="me-5"><a href="#">Início</a></li>
-      <li class="me-5"><a href="#services">Funcionalidades</a></li>
-      <li class="me-5"><a href="#reviews">O que dizem de nós?</a></li>
-      <li class="me-5"><a href="#pricing">Plano de Preços</a></li>
-      <a href="#contact"><button class="btn btn-blue-rounded">Agendar uma demonstração</button></a>
-    </ul>
-  </nav>
+    <!-- Seção inicial com destaque -->
+    <header class="hero-dog">
+      <div class="hero-text text-center">
+        <h1>Bem-vindo ao WoofWorks</h1>
+        <p>Simplifique a gestão do seu negócio de forma fácil.</p>
+      </div>
+    </header>
 
-  <header class="hero-dog">
-    <div class="hero-text text-center">
-      <h1>Bem-vindo ao WoofWorks</h1>
-      <p>Simplifique a gestão do seu negócio de forma fácil.</p>
-    </div>
-  </header>
+    <!-- Seção de funcionalidades -->
+    <section id="services">
+      <div class="container mx-auto mt-5 mt-16 text-center">
+        <h2 class="container-title custom-style-blue mb-10 mx-auto">Uma experiência única</h2>
+        <div class="row">
 
-  <section id="services">
-    <div class="container mx-auto mt-5 mt-16  text-center">
-      <h2 class="container-title custom-style-blue mb-10 mx-auto">Uma experiência única</h2>
-      <div class="row">
-        <div class="col">
-          <div class="card">
-            <img src="assets/images/pet_appointment.webp" class="card-image rounded-image mb-5" alt="Appointments Icon">
-            <h5 class="card-title">Faça marcações</h5>
-            <p class="card-text">
-              Agende e acompanhe compromissos com os donos dos animais. Use lembretes automáticos para se organizar e
-              nunca perder um cliente, garantindo um serviço excepcional.
+          <!-- Cartão de funcionalidade 1 -->
+          <div class="col">
+            <div class="card">
+              <img src="assets/images/pet_appointment.webp" class="card-image rounded-image mb-5" alt="Appointments Icon">
+              <h5 class="card-title">Faça marcações</h5>
+              <p class="card-text">
+                Agende e acompanhe compromissos com os donos dos animais. Use lembretes automáticos para se organizar e
+                nunca perder um cliente, garantindo um serviço excepcional.
+              </p>
+            </div>
+          </div>
+          
+          <!-- Cartão de funcionalidade 2 -->
+          <div class="col">
+            <div class="card">
+              <img src="assets/images/pet_profile.webp" class="card-image rounded-image mb-5" alt="Profiles Icon">
+              <h5 class="card-title">Controle os perfis de animais</h5>
+              <p class="card-text">
+                Mantenha registos detalhados para cada cão, incluindo informações de saúde, notas de comportamento e
+                preferências dos donos. Ofereça um cuidado personalizado que atenda às necessidades de cada patudo.
+              </p>
+            </div>
+          </div>
+
+          <!-- Cartão de funcionalidade 3 -->
+          <div class="col">
+            <div class="card">
+              <img src="assets/images/pet_report.webp" class="card-image rounded-image mb-5" alt="Reports Icon">
+              <h5 class="card-title">Relatórios Diários</h5>
+              <p class="card-text">
+                Partilhe atualizações diárias com os donos sobre as atividades e cuidados dos seus cães. Simplifique a
+                comunicação e crie confiança com relatórios transparentes e profissionais.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de avaliações dos clientes -->
+    <section id="reviews">
+      <div class="container mx-auto mt-5 mt-16 text-center">
+        <h2 class="container-title custom-style-blue mb-10 mx-auto">O que dizem de nós?</h2>
+        <div class="row">
+          <div class="col max-width">
+            <div class="card review max-width">
+              <img src="" class="card-image review-image rounded-image mb-5" alt="Profile Picture">
+              <h5 class="card-title review-name"></h5>
+              <img src="assets/images/5-star-rating.webp" alt="User rating" class="rating-image">
+              <p class="card-text review-text"></p>
+            </div>
+            <div class="slider-reviews-buttons">
+              <button class="btn btn-blue-rounded" onclick="previousReview()"><i class="fas fa-chevron-left"></i></button>
+              <button class="btn btn-blue-rounded" onclick="nextReview()"><i class="fas fa-chevron-right"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de planos de preços -->
+    <section id="pricing">
+      <div class="container mx-auto mt-16">
+        <h2 class="container-title custom-style-blue mb-10 mx-auto text-center">Planos de Preços</h2>
+        <div class="row">
+            <!-- Plano Básico -->
+          <div class="col">
+            <div class="card text-center">
+              <h5 class="card-title mb-5">Plano Básico <span class="badge badge-primary badge-pill">Iniciante</span></h5>
+              <hr class="gray mb-5">
+              <div class="card-text">
+                - Gestão de agendamentos<br>
+                - Perfis básicos de animais<br>
+                - Relatórios simples<br>
+              </div>
+              <div class="price mb-5">19€ /mês</div>
+              <button class="mx-auto btn btn-blue-rounded">Escolher Plano</button>
+            </div>
+          </div>
+          
+            <!-- Plano Pro -->
+          <div class="col">
+            <div class="card text-center">
+              <h5 class="card-title mb-5">Plano Pro <span class="badge badge-danger badge-pill">Recomendado</span></h5>
+              <hr class="gray mb-5">
+              <div class="card-text">
+                - Tudo do básico <br>
+                - Relatórios avançados<br>
+                - Gestão de equipa<br>
+                - Mensagens interativas<br>
+              </div>
+              <div class="price mb-5">39€ /mês</div>
+              <button class="mx-auto btn btn-blue-rounded">Escolher Plano</button>
+            </div>
+          </div>
+          <!-- Plano Premium -->
+          <div class="col">
+            <div class="card text-center">
+              <h5 class="card-title mb-5">Plano Premium <span class="badge badge-success badge-pill">Tudo incluído</span>
+              </h5>
+              <hr class="gray mb-5">
+              <div class="card-text">
+                - Tudo do Pro<br>
+                - Integração API<br>
+                - Suporte prioritário<br>
+                - Personalização total<br>
+              </div>
+              <div class="price mb-5">69€ /mês</div>
+              <button class="mx-auto btn btn-blue-rounded">Escolher Plano</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de contato -->
+    <section id="contact">
+      <div class="container mx-auto mt-16 py-10 bg-gray border-round">
+        <h2 class="container-title custom-style-blue mb-10 mx-auto text-center">Contacte-nos</h2>
+        <div class="row">
+          <div class="col">
+            <h1>WoofWorks</h1>
+            <p>
+              Estamos à disposição para esclarecer as suas dúvidas. Preencha o formulário ao lado e entraremos em contacto
+              o mais breve possível.
+            </p>
+            <img src="assets/images/cao-vector.webp" alt="Vetor-Cão" class="mt-5">
+          </div>
+          <div class="col">
+            <form action="">
+              <div class="form-group">
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name" class="form-control" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" class="form-control" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Telefone</label>
+                <input type="tel" id="phone" name="phone" class="form-control" required>
+                <span id="phone-helper"></span>
+              </div>
+              <div class="form-group">
+                <label for="message">Mensagem</label>
+                <textarea name="message" id="message" class="form-control" required></textarea>
+              </div>
+              <button id="submit-button" class="btn btn-blue-rounded">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer mt-20">
+      <div class="container mx-auto py-10">
+        <div class="row">
+          <!-- Informações sobre a empresa -->
+          <div class="col">
+            <h4 class="footer-title mb-5">Sobre</h4>
+            <p>
+              WoofWorks é uma plataforma pensada para simplificar a gestão de creches caninas,
+              oferecendo soluções intuitivas e eficientes. Criado com foco em design moderno e funcional.
             </p>
           </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="assets/images/pet_profile.webp" class="card-image rounded-image mb-5" alt="Profiles Icon">
-            <h5 class="card-title">Controle os perfis de animais</h5>
-            <p class="card-text">
-              Mantenha registos detalhados para cada cão, incluindo informações de saúde, notas de comportamento e
-              preferências dos donos. Ofereça um cuidado personalizado que atenda às necessidades de cada patudo.
-            </p>
+            <!-- Informações de contato -->
+          <div class="col text-center">
+            <h4 class="footer-title mb-5">Contactos</h4>
+            <ul class="footer-contacts">
+              <li><i class="fas fa-phone-alt me-2"></i>+351 912 345 678</li>
+              <li><i class="fas fa-envelope me-2"></i>info@woofworks.pt</li>
+              <li><i class="fas fa-map-marker-alt me-2"></i>Porto, Portugal</li>
+            </ul>
+          </div>
+          <!-- Redes sociais -->
+          <div class="col text-center">
+            <h4 class="footer-title mb-5">Siga-nos</h4>
+            <div class="social-icons">
+              <a href="#" class="footer-link me-3"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="footer-link me-3"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="footer-link me-3"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="footer-link"><i class="fab fa-linkedin-in"></i></a>
+            </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card">
-            <img src="assets/images/pet_report.webp" class="card-image rounded-image mb-5" alt="Reports Icon">
-            <h5 class="card-title">Relatórios Diários</h5>
-            <p class="card-text">
-              Partilhe atualizações diárias com os donos sobre as atividades e cuidados dos seus cães. Simplifique a
-              comunicação e crie confiança com relatórios transparentes e profissionais.
-            </p>
-          </div>
+        <hr class="mt-10 gray">
+        <div class="text-center">
+          <p class="mb-0">© 2024 WoofWorks. Todos os direitos reservados.</p>
         </div>
       </div>
-    </div>
-  </section>
+    </footer>
 
-  <section id="reviews">
-    <div class="container mx-auto mt-5 mt-16  text-center">
-      <h2 class="container-title custom-style-blue mb-10 mx-auto">O que dizem de nós?</h2>
-      <div class="row">
-        <div class="col max-width">
-          <div class="card review max-width">
-            <img src="" class="card-image review-image rounded-image mb-5" alt="Profile Picture">
-            <h5 class="card-title review-name"></h5>
-            <img src="assets/images/5-star-rating.webp" alt="User rating" class="rating-image">
-            <p class="card-text review-text"></p>
-          </div>
-          <div class="slider-reviews-buttons">
-            <button class="btn btn-blue-rounded" onclick="previousReview()"><i class="fas fa-chevron-left"></i></button>
-            <button class="btn btn-blue-rounded" onclick="nextReview()"><i class="fas fa-chevron-right"></i></button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="pricing">
-    <div class="container mx-auto mt-16">
-      <h2 class="container-title custom-style-blue mb-10 mx-auto text-center">Planos de Preços</h2>
-      <div class="row">
-        <div class="col">
-          <div class="card text-center">
-            <h5 class="card-title mb-5">Plano Básico <span class="badge badge-primary badge-pill">Iniciante</span></h5>
-            <hr class="gray mb-5">
-            <div class="card-text">
-              - Gestão de agendamentos<br>
-              - Perfis básicos de animais<br>
-              - Relatórios simples<br>
-            </div>
-            <div class="price mb-5">19€ /mês</div>
-            <button class="mx-auto btn btn-blue-rounded">Escolher Plano</button>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card text-center">
-            <h5 class="card-title mb-5">Plano Pro <span class="badge badge-danger badge-pill">Recomendado</span></h5>
-            <hr class="gray mb-5">
-            <div class="card-text">
-              - Tudo do básico <br>
-              - Relatórios avançados<br>
-              - Gestão de equipa<br>
-              - Mensagens interativas<br>
-            </div>
-            <div class="price mb-5">39€ /mês</div>
-            <button class="mx-auto btn btn-blue-rounded">Escolher Plano</button>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card text-center">
-            <h5 class="card-title mb-5">Plano Premium <span class="badge badge-success badge-pill">Tudo incluído</span>
-            </h5>
-            <hr class="gray mb-5">
-            <div class="card-text">
-              - Tudo do Pro<br>
-              - Integração API<br>
-              - Suporte prioritário<br>
-              - Personalização total<br>
-            </div>
-            <div class="price mb-5">69€ /mês</div>
-            <button class="mx-auto btn btn-blue-rounded">Escolher Plano</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact">
-    <div class="container mx-auto mt-16 py-10 bg-gray border-round">
-      <h2 class="container-title custom-style-blue mb-10 mx-auto text-center">Contacte-nos</h2>
-      <div class="row">
-        <div class="col">
-          <h1>WoofWorks</h1>
-          <p>
-            Estamos à disposição para esclarecer as suas dúvidas. Preencha o formulário ao lado e entraremos em contacto
-            o mais breve possível.
-          </p>
-          <img src="assets/images/cao-vector.webp" alt="Vetor-Cão" class="mt-5">
-        </div>
-        <div class="col">
-          <form action="">
-            <div class="form-group">
-              <label for="name">Nome</label>
-              <input type="text" id="name" name="name" class="form-control" required>
-            </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" class="form-control" required>
-            </div>
-            <div class="form-group">
-              <label for="phone">Telefone</label>
-              <input type="tel" id="phone" name="phone" class="form-control" required>
-              <span id="phone-helper"></span>
-            </div>
-            <div class="form-group">
-              <label for="message">Mensagem</label>
-              <textarea name="message" id="message" class="form-control" required></textarea>
-            </div>
-            <button id="submit-button" class="btn btn-blue-rounded">Enviar</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer mt-20">
-    <div class="container mx-auto py-10">
-      <div class="row">
-        <!-- Coluna 1: Sobre -->
-        <div class="col">
-          <h4 class="footer-title mb-5">Sobre</h4>
-          <p>
-            WoofWorks é uma plataforma pensada para simplificar a gestão de creches caninas,
-            oferecendo soluções intuitivas e eficientes. Criado com foco em design moderno e funcional.
-          </p>
-        </div>
-        <!-- Coluna 2: Contactos -->
-        <div class="col text-center">
-          <h4 class="footer-title mb-5">Contactos</h4>
-          <ul class="footer-contacts">
-            <li><i class="fas fa-phone-alt me-2"></i>+351 912 345 678</li>
-            <li><i class="fas fa-envelope me-2"></i>info@woofworks.pt</li>
-            <li><i class="fas fa-map-marker-alt me-2"></i>Porto, Portugal</li>
-          </ul>
-        </div>
-        <!-- Coluna 3: Redes Sociais -->
-        <div class="col text-center">
-          <h4 class="footer-title mb-5">Siga-nos</h4>
-          <div class="social-icons">
-            <a href="#" class="footer-link me-3"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="footer-link me-3"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="footer-link me-3"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="footer-link"><i class="fab fa-linkedin-in"></i></a>
-          </div>
-        </div>
-      </div>
-      <hr class="mt-10 gray">
-      <div class="text-center">
-        <p class="mb-0">© 2024 WoofWorks. Todos os direitos reservados.</p>
-      </div>
-    </div>
-  </footer>
-
-  <script src="assets/js/menu-toggle.js"></script>
-  <script src="assets/js/verify-inputs.js"></script>
-  <script src="assets/js/slider-reviews.js"></script>
-</body>
-
+    <!-- Scripts adicionais -->
+    <script src="assets/js/menu-toggle.js"></script>
+    <script src="assets/js/verify-inputs.js"></script>
+    <script src="assets/js/slider-reviews.js"></script>
+  </body>
 </html>
